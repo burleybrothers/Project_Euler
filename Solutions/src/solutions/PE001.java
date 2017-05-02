@@ -14,7 +14,7 @@ public class PE001 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+
         // Define Local Variables
         List<Integer> multiplesFound = new ArrayList<>();
         int sum = 0;
