@@ -36,5 +36,3 @@ public class PE002 {
         System.out.print("\nThe sum of even-valued terms less than 4,000,000 is: " + sum);
     }
 }
-
-/* The sum of even-valued terms less than 4,000,000 is: 4613732 */
