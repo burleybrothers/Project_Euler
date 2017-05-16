@@ -33,3 +33,5 @@ public class PE001 {
         System.out.println("The Value is: " + sum);
     }
 }
+
+/* The Value is: 233168 */

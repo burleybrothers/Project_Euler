@@ -7,7 +7,7 @@
     By considering the terms in the Fibonacci sequence whose values do not
     exceed four million, find the sum of the even-valued terms.
 
-    Date: ??
+    Date:   5/15/2016
     Author: Jeremiah Burley
  */
 package solutions;
@@ -15,6 +15,26 @@ package solutions;
 public class PE002 {
 
     public static void main(String[] args) {
-        System.out.println("Place program code here...");
+
+        // Define Local Variables
+        int newTerm = 1;
+        int term1   = 1;
+        int term2   = 2;
+        int sum     = 2;	// First even Fibonacci number
+        
+        while (newTerm <= 4000000) {
+        
+        	newTerm = term1 + term2;
+            
+            if (newTerm % 2 == 0 && newTerm <= 4000000) {
+            	sum += newTerm;
+            }
+
+        	term1 = term2;
+        	term2 = newTerm;
+        }
+        System.out.print("\nThe sum of even-valued terms less than 4,000,000 is: " + sum);
     }
 }
+
+/* The sum of even-valued terms less than 4,000,000 is: 4613732 */
